@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;  
+    background: url(./img/bg.png)  repeat-y;
+}
+
+.body {
+    overflow-x: hidden;
+    padding-top: 8rem;
+    font-family: Arial,  sans-serif;
+}
+
+.navbar{
+    width:100%;
+    background: #dfeaf8;
+    height: 4rem;
+    position:fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem 0 2rem;
+    z-index: 1000;
+    
+}
+/* #menu{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    display: none;
+    
+} */
+#logo{
+    height: 2rem;
+}
+
+.menu{
+    /* margin-left: 40rem; */
+    margin-left: 0;
+    /* margin-top: 1rem; */
+    display: flex;
+    column-gap: 2rem;
+    font-family: Arial,  sans-serif;
+    align-items: center;
+}
+
+#section1{
+    display: flex;
+    gap: 8rem;
+   
+}
+#firstcolumn{
+    margin-left: 8rem;
+}
+#hello{
+
+    border: 2px solid rgb(214, 229, 234);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    padding: 2rem 2rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  animation: lefttext 1s ease-out forwards;
+}
+
+#hand{
+ font-size: 2.5rem; 
+
+}
+
+#pp{
+   margin-top: 4rem;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    width: fit-content; 
+    text-align: center;
+  animation: lefttext 1s ease-out forwards;    
+}
+.text{
+    padding: 1rem 2rem;
+    border: 2px solid rgb(214, 229, 234);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    
+}
+
+#text3{
+    
+    margin-left: 2rem;
+
+}
+#text4{
+    margin-left: 5rem;
+}
+
+
+
+/* .grid{
+    display: grid;
+}
+.grid img{
+    grid-area: 1 / 1;
+    width: 100%;
+} */
+
+/* .front{
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+}  */
+
+#man{
+
+    margin-top: 6rem;
+
+    
+}
+
+#smallcircle1{
+    
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+    
+}
+#smallcircle2{
+    
+    height: 9.2rem;
+    width: 9.2rem;
+     margin-top: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    
+}
+#jsimg{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#cssimg{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#smallcircle3{
+   
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    margin-top: 5rem;
+    
+}
+#htmlimg{
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+/* The skill circles */
+.skill {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rightcircles 1s ease-out backwards;
+}
+
+ @keyframes rightcircles {
+ from { transform: translateX(200px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes lefttext {
+
+    from{
+
+        left: 0;
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        left: 10%;
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+/* Section 2 */
+
+#section2{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+#section2Text{
+
+    display:flex;
+    justify-content: center;
+    font-size: xx-large;
+    
+}
+
+.textcolor{
+
+    color: rgba(37, 82, 218, 0.871);
+}
+#section2img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+
+}
+.section2img{
+
+    width: 220px;
+    border-radius: 1rem;
+}
+.s2it{
+    display: grid;
+    justify-items: center;
+}
+
+#section3{
+    padding: 20px;
+  background: #f5f7fb;
+
+}
+.card-container{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+  margin: 0 auto;
+}
+.card{
+    background: rgba(255, 253, 253, 0.974);
+    height: max-content;
+    width: 18rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(20,30,60,0.08);
+    font-weight: 600;
+  color: #222;
+}
+.text{
+    text-align: center;
+}
+
+.s3img{
+    width: 14rem;
+}
+
+h4 ,p{
+    background: none;
+}
